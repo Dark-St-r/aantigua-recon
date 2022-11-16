@@ -1,0 +1,21 @@
+---
+import Navigation from "./Navigation.astro";
+---
+<header class="text-center">
+    <nav>
+        <div class="bg-black p-3 flex justify-between">
+            <img src="/favicon.svg" alt="LOGO" class="w-8 h-8 group/menu">
+            <p class="text-white">Menu</p>
+        </div>
+        <div class="divide-y hidden group-focus/menu:visible">
+        <Navigation menuLink="about" />
+        <Navigation menuLink="specialization" />
+        <Navigation menuLink="training" />
+        <Navigation menuLink="timeline" />
+        <Navigation menuLink="partners" />
+        <Navigation menuLink="contact" />
+        <Navigation menuLink="application" />
+        <Navigation menuLink="blog" />
+    </div>
+    </nav>
+</header>

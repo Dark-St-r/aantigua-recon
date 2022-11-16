@@ -1,0 +1,7 @@
+---
+const {menuLink} = Astro.props;
+---
+
+<div class="nav-links flex flex-col bg-slate-600 text-md font-bold px-10 uppercase">
+    <a class="p-3" href={`/${menuLink}/`}>{menuLink}</a>
+</div>

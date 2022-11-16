@@ -1,15 +1,62 @@
 ---
----
+import BaseLayout from "../layouts/BaseLayout.astro";
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+const pageTitle = "Antigua Recon | Home";
+---
+<BaseLayout pageTitle={pageTitle}>
+	<div id="welcome">
+		<h2>
+			We're <br>
+			<span class="brand">Antigua</span>Recon
+		</h2>
+		
+		<h3>
+			Cybersecurity Training, Simulated <br>
+			Phishing Tests, and Penetration <br>
+			Testing... all from the Caribbean <br>
+			Island nation of Antigua and Barbuda!
+		</h3>
+	</div>
+
+	<div id="about">
+		<img src="" alt="">
+
+		<p>
+			<span class="brand">Antigua</span>Recon trains young Antiguans as pentesters supported by <br>
+			seasoned cybersecurity experts from around the globe.  Our goal is to <br>
+			create a team of cybersecurity professionals who can provide <br>
+			offshore and nearshore cybersecurity services to companies from <br>
+			around the region and in the US and Canada. 
+		</p>
+
+		<a href="#contact-us">Contact Us</a>
+	</div>
+
+	<div id="specialization">
+		<h3 class="title">
+			<span class="numbers">01</span>
+			Areas  of Specialization
+		</h3>
+	</div>
+
+	<div id="training">
+		<h3 class="title">
+			<span class="numbers">02</span>
+			Training
+		</h3>
+	</div>
+
+	<div id="timeline">
+		<h3 class="title">
+			<span class="numbers">03</span>
+			Timeline
+		</h3>
+	</div>
+
+	<div id="partners">
+		<h3 class="title">
+			<span class="numbers">04</span>
+			Partners
+		</h3>
+	</div>
+</BaseLayout>
